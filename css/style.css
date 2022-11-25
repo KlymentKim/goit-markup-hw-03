@@ -32,7 +32,6 @@ ul{
 body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--primary-color-baground);
-  
 }
 .visually-hidden {
     position: absolute;
@@ -47,6 +46,10 @@ body{
     overflow: hidden;
 }
 /* main css */
+.main-header{
+    display: flex;
+    
+}
 .main-logo1,
 .footer-logo1{
     font-family: Raleway;
@@ -76,7 +79,9 @@ body{
     text-transform: uppercase;
 }
 
-.main-page-nav-content{
+.main-nav-content{
+    display: inline-flex;
+    flex-direction: row;
      background-color: var(--primary-color-baground);
 }
 
@@ -104,8 +109,11 @@ body{
 .header-contact:hover{
     color:var(--primary-color-button);
 }
+.title-description{
+ background-color: var(--primary-color-title);
+}
 .main-title-content{
-    background-color: var(--primary-color-title);
+   
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -119,8 +127,9 @@ body{
     letter-spacing: 0.02em;
 
 }
-.main-our-team{
-    background-color: var(primary-color-logo2);
+.main-title-content{
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
 }
 .employee{
     background-color:var(--primary-color-baground);
