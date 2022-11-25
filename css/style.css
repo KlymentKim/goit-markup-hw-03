@@ -27,7 +27,8 @@ ul{
 }
 .container{
     width: 1158px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -48,6 +49,7 @@ body{
 /* main css */
 .main-header{
     display: flex;
+    vertical-align:middle;
     
 }
 .main-logo1,
