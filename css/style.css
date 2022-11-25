@@ -79,7 +79,7 @@ body{
     text-transform: uppercase;
 }
 
-.main-nav-content{
+.main-menu{
     display: inline-flex;
     flex-direction: row;
      background-color: var(--primary-color-baground);
