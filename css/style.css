@@ -80,8 +80,7 @@ body{
 }
 
 .main-menu{
-    display: inline-flex;
-    flex-direction: row;
+    display: flex;
      background-color: var(--primary-color-baground);
 }
 
@@ -151,6 +150,7 @@ body{
     color: var(--primary-color-baground);
     border-radius: 4px;
     cursor: pointer;
+    padding: 16px 32px;
 }
 .btn:hover{
     background-color: #404BBF;
