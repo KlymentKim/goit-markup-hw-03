@@ -10,7 +10,14 @@
     --footer-color-text:#E7E9FC;
     --color-btn-hover:#404BBF;
 }
-
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
 a{
     text-decoration: none;
     color:inherit;
@@ -18,7 +25,9 @@ a{
 ul{
     list-style: none;
 }
-
+.container{
+    width: 1158px;
+}
 body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--primary-color-baground);
