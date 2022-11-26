@@ -80,37 +80,57 @@ body{
     line-height: 1.5;
     text-transform: uppercase;
 }
-.conteiner-menu{
-    display: flex;
-    align-items: flex-end;
-    outline: 2px solid tomato;
-    
-}
 
 .main-menu{
-    display: flex;
+    /* display: flex; */
     outline: 1px solid tomato;
 }
+/* ul списсок */
 .header-nav-list{
     display: flex;
 }
-.header-nav-list .item{
+.header-contact-items{
+    display: flex;
+}
+
+/* 1-й вариант чистка отсупов */
+/* .header-nav-list .item:not(:last-child){
     background-color: tomato;
     margin-right: 40px;
     outline: 1px solid black;
-}
+} */
 
+/* 2-й вариант чистка отсупов nav ul li */
+.header-nav-list .item + .item {
+    background-color: tomato;
+    margin-left: 40px;
+    outline: 1px solid black;
+}
+/* ul li contacts */
+.header-contact-items .item + .item{
+    margin-left: 40px;
+}
+/* задаем ссылки правий отступ */
+.header-nav-list .nav-link{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+}
 /* .header-nav-list .nav-items:last-child {
     margin-right: 0;
 } */
+.nav-link,
 .portfolio-nav-items{
-    color: var(--primary-color-text);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;  
+    cursor: pointer;
+
+    color: var(--primary-color-text);
 }
-.main-nav-items:hover,
+.nav-link:hover,
 .portfolio-nav-items:hover{
     color:var(--primary-color-button);
 }
@@ -126,6 +146,10 @@ body{
 .header-contact:hover{
     color:var(--primary-color-button);
 }
+.header-contact{
+    display: flex;
+}
+
 .title-description{
  background-color: var(--primary-color-title);
 }
