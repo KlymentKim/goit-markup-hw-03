@@ -50,6 +50,10 @@ body{
     padding-left: 10px;
     padding-right: 10px;
 }
+/* всі елементи nav горизонтально  */
+.container-menu{
+    display: flex;
+}
 .main-logo1,
 .footer-logo1{
     display: flex;
@@ -82,7 +86,6 @@ body{
 }
 
 .main-menu{
-    /* display: flex; */
     outline: 1px solid tomato;
 }
 /* ul списсок */
