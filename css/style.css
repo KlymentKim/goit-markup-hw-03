@@ -53,10 +53,10 @@ body{
 /* всі елементи nav горизонтально  */
 .container-menu{
     display: flex;
+    align-items: center;
 }
 .main-logo1,
 .footer-logo1{
-    display: flex;
     font-family: Raleway;
     font-style: normal;
     color: var(--primary-color-logo1);
@@ -66,7 +66,6 @@ body{
     text-transform: uppercase;
 }
 .main-logo2{
-    display: flex;
     color: var(--primary-color-title);
     font-family: Raleway;
     font-style: normal;
