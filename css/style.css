@@ -50,12 +50,6 @@ body{
     padding-left: 10px;
     padding-right: 10px;
 }
-.header-main{
-    width: 1440px;
-    padding-left: auto;
-    padding-right: auto;
-    outline: 2px solid tomato;
-}
 .main-logo1,
 .footer-logo1{
     display: flex;
@@ -86,19 +80,20 @@ body{
     line-height: 1.5;
     text-transform: uppercase;
 }
+.conteiner-menu{
+    display: flex;
+    outline: 2px solid tomato;
+    
+}
 
 .main-menu{
     display: flex;
-     background-color: var(--primary-color-baground);
+    outline: 1px solid tomato;
 }
 .header-nav-list{
     display: flex;
 }
 
-.header-nav-list .nav-items{
-    background-color:aqua;
-    margin-               : 77px;
-}
 .header-nav-list .nav-items:last-child {
     margin-right: 0;
 }
