@@ -82,6 +82,7 @@ body{
 }
 .conteiner-menu{
     display: flex;
+    align-items: flex-end;
     outline: 2px solid tomato;
     
 }
@@ -93,10 +94,15 @@ body{
 .header-nav-list{
     display: flex;
 }
-
-.header-nav-list .nav-items:last-child {
-    margin-right: 0;
+.header-nav-list .item{
+    background-color: tomato;
+    margin-right: 40px;
+    outline: 1px solid black;
 }
+
+/* .header-nav-list .nav-items:last-child {
+    margin-right: 0;
+} */
 .portfolio-nav-items{
     color: var(--primary-color-text);
     font-weight: 500;
