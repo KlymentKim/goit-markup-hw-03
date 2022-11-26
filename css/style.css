@@ -94,8 +94,13 @@ body{
 .header-nav-list{
     display: flex;
 }
-.main-nav-items > .nav-items{
-    background-color: blue;
+
+.header-nav-list .nav-items{
+    background-color:aqua;
+    margin-right: 77px;
+}
+.header-nav-list .nav-items:last-child {
+    margin-right: 0;
 }
 .portfolio-nav-items{
     color: var(--primary-color-text);
