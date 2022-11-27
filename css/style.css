@@ -30,8 +30,6 @@ body{
     background-color: var(--primary-color-baground);
 }
 .visually-hidden {
-    margin-top: 0;
-    margin-bottom: 0;
     position: absolute;
     width: 1px;
     height: 1px;
@@ -142,6 +140,10 @@ body{
 .portfolio-nav-items:hover{
     color:var(--primary-color-button);
 }
+.main-text-about{
+    margin-top: 0;
+    margin-bottom: 120px;
+}
 .contact-link,
 .main-text-about,
 .main-job-title,
@@ -213,11 +215,16 @@ body{
 .btn:hover{
     background-color: #404BBF;
 }
-
+.container-list{
+    margin-top: 0;
+    margin-bottom: 0px;
+   
+}
 .h3-goals{
-    margin-top: 120px;
+    margin-top: 0px;
     margin-bottom: 8px;
-    background-color: aqua;
+    background-color: aqua; 
+    
 }
 .h3-goals,
 .h3-name,
