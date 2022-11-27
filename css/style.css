@@ -52,9 +52,10 @@ body{
 }
 /* всі елементи nav горизонтально  */
 .container-menu{
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
+
 .main-logo1,
 .footer-logo1{
     font-family: Raleway;
@@ -85,12 +86,13 @@ body{
 }
 
 .main-menu{
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
-/* ul списсок */
+/* ul список */
 .header-nav-list{
     display: flex;
 }
+/* ul список */
 .header-contact-items{
     display: flex;
 }
@@ -104,9 +106,9 @@ body{
 
 /* 2-й вариант чистка отсупов nav ul li */
 .header-nav-list .item + .item {
-    background-color: tomato;
+    /* background-color: tomato; */
     margin-left: 40px;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
 }
 /* ul li contacts */
 .header-contact-items .item + .item{
@@ -136,7 +138,7 @@ body{
 .portfolio-nav-items:hover{
     color:var(--primary-color-button);
 }
-.header-contact,
+.contact-link,
 .main-text-about,
 .main-job-title,
 .portfolio-text-about{
@@ -145,10 +147,10 @@ body{
     line-height: 1.5; 
     letter-spacing: 0.02em;
 }
-.header-contact:hover{
+.contact-link:hover{
     color:var(--primary-color-button);
 }
-.header-contact{
+.contact-link{
     display: flex;
 }
 
