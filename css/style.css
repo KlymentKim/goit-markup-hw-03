@@ -25,7 +25,6 @@ a{
 ul{
     list-style: none;
 }
-
 body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--primary-color-baground);
@@ -43,7 +42,6 @@ body{
     overflow: hidden;
 }
 /* main css */
-
 .container{
     width: 1148px;
     margin: 0 auto;
@@ -55,7 +53,7 @@ body{
     display: inline-flex;
     align-items: center;
 }
-
+/* Fonts styles */
 .main-logo1,
 .footer-logo1{
     font-family: Raleway;
@@ -86,7 +84,7 @@ body{
 }
 
 .main-menu{
-    /* outline: 1px solid tomato; */
+    outline: 1px solid tomato;
 }
 /* ul список */
 .header-nav-list{
@@ -95,6 +93,7 @@ body{
 /* ul список */
 .header-contact-items{
     display: flex;
+
 }
 
 /* 1-й вариант чистка отсупов */
