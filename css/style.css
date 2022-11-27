@@ -52,6 +52,10 @@ body{
 .container-menu{
     display: inline-flex;
     align-items: center;
+
+    width: 1148px;
+    margin: 0 auto;
+   
 }
 /* Fonts styles */
 .main-logo1,
@@ -156,10 +160,7 @@ body{
 .title-description{
  background-color: var(--primary-color-title);
 }
-.main-title-content{
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
+
 .main-title-todo{
     color: var(--primary-color-text);
     text-align:center;
@@ -170,10 +171,7 @@ body{
     letter-spacing: 0.02em;
 
 }
-.main-title-content{
-    /* padding-top: 120px;
-    padding-bottom: 120px; */
-}
+
 .employee{
     background-color:var(--primary-color-baground);
 }
@@ -188,10 +186,10 @@ body{
 }
 .btn{
     font-family: inherit;
-    color: var(--primary-color-button);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    
     background-color: var(--primary-color-button);
     color: var(--primary-color-baground);
     border-radius: 4px;
@@ -203,7 +201,7 @@ body{
     border: 1px solid transparent;
 
     display: flex;
-    
+
 }
 .btn:hover{
     background-color: #404BBF;
