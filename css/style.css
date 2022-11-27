@@ -155,9 +155,12 @@ body{
 .contact-link{
     display: flex;
 }
-
-.title-description{
+.hero{
+    text-align: centers; 
+}
+.title-content{
  background-color: var(--primary-color-title);
+text-align: center;
 }
 
 .main-title-todo{
@@ -201,9 +204,6 @@ body{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 1px solid transparent;
 
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 16px 32px;
     gap: 10px;
     border-radius: 4px;
