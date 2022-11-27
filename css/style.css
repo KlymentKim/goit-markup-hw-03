@@ -50,11 +50,9 @@ body{
 }
 /* всі елементи nav горизонтально  */
 .container-menu{
-    display: inline-flex;
+    display: flex;
     align-items: center;
-
-    width: 1148px;
-    margin: 0 auto;
+    background-color: aqua;
    
 }
 /* Fonts styles */
@@ -89,17 +87,17 @@ body{
 
 .main-menu{
     outline: 1px solid tomato;
+    
 }
 /* ul список */
 .header-nav-list{
     display: flex;
 }
 /* ul список */
-.header-contact-items{
+.header-contact-list{
     display: flex;
 
 }
-
 /* 1-й вариант чистка отсупов */
 /* .header-nav-list .item:not(:last-child){
     background-color: tomato;
@@ -114,7 +112,7 @@ body{
     /* outline: 1px solid black; */
 }
 /* ul li contacts */
-.header-contact-items .item + .item{
+.header-contact-list .item + .item{
     margin-left: 40px;
 }
 /* задаем ссылки правий отступ */
@@ -122,6 +120,7 @@ body{
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
+    /* padding: 24px 24px; */
     
 }
 /* .header-nav-list .nav-items:last-child {
@@ -176,13 +175,17 @@ body{
     background-color:var(--primary-color-baground);
 }
 .main-title-item{
+    margin-top: 0;
+    margin-bottom: 48px;
+    text-align: center;
+    vertical-align: top;
+
     color:var(--primary-color-baground);
     font-weight: 500;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
-    vertical-align: top;
     letter-spacing: 0.02em;
+    outline: 1px solid tomato;
 }
 .btn{
     font-family: inherit;
