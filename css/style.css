@@ -43,16 +43,20 @@ body{
 }
 /* main css */
 .container{
-    width: 1148px;
+    width: 1200px;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
+}
+.header-div{
+    display: flex;
+    align-items: center;
 }
 /* всі елементи nav горизонтально  */
 .container-menu{
     display: flex;
     align-items: center;
-    background-color: aqua;
+    /* background-color: aqua; */
    
 }
 /* Fonts styles */
@@ -86,6 +90,7 @@ body{
 }
 
 .main-menu{
+    display: flex;
     outline: 1px solid tomato;
     
 }
