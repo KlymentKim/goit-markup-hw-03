@@ -140,9 +140,15 @@ body{
 .portfolio-nav-items:hover{
     color:var(--primary-color-button);
 }
+
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .main-text-about{
     margin-top: 0;
-    margin-bottom: 120px;
+    margin-bottom: 0;
 }
 .contact-link,
 .main-text-about,
