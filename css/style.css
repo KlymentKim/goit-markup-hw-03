@@ -53,6 +53,9 @@ body{
     display: flex;
     align-items: center;
 }
+.item{
+    margin-right: 77px;
+}
 /* всі елементи nav горизонтально  */
 .container-menu{
     display: flex;
