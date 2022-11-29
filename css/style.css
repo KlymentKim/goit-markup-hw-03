@@ -6,7 +6,7 @@ html{
 *::after{
     box-sizing: inherit;
 }
-a{
+.link{
     text-decoration: none;
     color:inherit;
 }
@@ -69,7 +69,8 @@ body{
 /* всі елементи nav горизонтально  */
 .container-menu{
     display: flex;
-    align-items: center;     
+    align-items: center;  
+    justify-content: space-between;   
 }
 .main-logo1{
     margin-right: 77px;
@@ -80,9 +81,11 @@ body{
 .menu-item:not(:last-child){
     margin-right: 40px;
 }
+.menu-contact{
+    margin-left: auto;
+}
 
-
-/* Fonts styles */
+            /* Fonts styles */
 .main-logo1,
 .footer-logo1{
     font-family: Raleway;
@@ -112,6 +115,7 @@ body{
     text-transform: uppercase;
 }
 
+                    /* MAIN SECTION  */
 .main-menu{
     display: flex;
     outline: 1px solid tomato;
