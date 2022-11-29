@@ -61,6 +61,9 @@ body{
 }        
 
         /* HEADER CONTENT  */
+.header{
+    padding: 24px 24px;
+}
 .header-div{
     display: flex;
     align-items: center;
@@ -149,13 +152,6 @@ body{
     margin-left: 40px;
 } */
 /* задаем ссылки правий отступ */
-.header-menu .nav-link{
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    /* padding: 24px 24px; */
-    
-}
 /* .header-nav-list .nav-items:last-child {
     margin-right: 0;
 } */
