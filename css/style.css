@@ -36,7 +36,7 @@ img{
     --footer-color-text:#E7E9FC;
     --color-btn-hover:#404BBF;
 
-    -- 
+    --card-set-gap: 20px;
 }
 
 body{
@@ -179,9 +179,14 @@ body{
 .container-list{
     display: flex;
     flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
 }
 .container-card-wokr{
-    flex-basis: calc((100% - 24px) /3);
+    flex-basis: calc((100% / 3 - var(--card-set-gap)));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+
 }
 .border-wrapper{
     /* border: 1px solid #E7E9FC;
@@ -198,27 +203,27 @@ body{
 .employee-wrapper-content{
     background-color:var(--primary-color-baground);
     
-
 }
 .employees-list{
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
  
-    margin-left: -24px;
-    margin-top: -24px;
+    margin-left: calc(-1 *var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
 
     background-color: #F4F4FD;
 }
 .employees-list > .employee-card{
-    flex-basis: calc(100% / 4 - 24px);
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
 
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 
-    margin-left: 24px;
-    margin-top: 24px;
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
     
 }
 .employee-wrapper{
