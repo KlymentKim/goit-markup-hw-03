@@ -4,7 +4,7 @@ html{
 *,
 *::before,
 *::after{
-    box-sizings inherit;
+    box-sizings: inherit;
 }
 .link{
     text-decoration: none;
@@ -58,7 +58,11 @@ body{
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-}        
+}
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
         /* HEADER CONTENT  */
 .header{
@@ -167,34 +171,11 @@ body{
 }
 
             /* EMPLOYEERS */
-
-.main-employees-content{
+.section-employees-content{
     background-color: #F4F4FD;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
-/* 1-й вариант чистка отсупов */
-/* .header-menu .item:not(:last-child){
-    background-color: tomato;
-    margin-right: 40px;
-    outline: 1px solid black;
-} */
 
-/* 2-й вариант чистка отсупов nav ul li */
-/* .header-menu .item + .item { */
-    /* background-color: tomato; */
-    /* margin-left: 40px; */
-    /* outline: 1px solid black; */
-/* } */
-/* ul li contacts */
-/* .header-contact-list .item + .item{
-    margin-left: 40px;
-} */
-/* задаем ссылки правий отступ */
-/* .header-nav-list .nav-items:last-child {
-    margin-right: 0;
-} */
 .nav-link,
 .portfolio-nav-items{
     font-weight: 500;
@@ -210,15 +191,6 @@ body{
     color:var(--primary-color-button);
 }
 
-.section{
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-.main-text-about{
-    margin-top: 0;
-    margin-bottom: 0;
-}
 .contact-link,
 .main-text-about,
 .main-job-title,
