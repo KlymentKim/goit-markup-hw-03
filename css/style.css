@@ -175,7 +175,13 @@ body{
     background-color: #F4F4FD;
 }
 
-
+.employees-list{
+    display: flex;
+}
+.employee{
+    background-color:var(--primary-color-baground);
+}
+                /* Header menu */
 .nav-link,
 .portfolio-nav-items{
     font-weight: 500;
@@ -206,33 +212,23 @@ body{
 .contact-link{
     display: flex;
 }
-
-
+            /* Section H2 */
 .main-title-todo{
     color: var(--primary-color-text);
     text-align:center;
+    
     font-weight: 500;
     font-size: 36px;
     line-height: 1.11;
     text-transform: capitalize;
     letter-spacing: 0.02em;
-
-}
-
-.employee{
-    background-color:var(--primary-color-baground);
-}
-
-.container-list{
-    margin-top: 0;
-    margin-bottom: 0px;
-   
+    
+    margin-bottom: 72px;
 }
 .h3-goals{
     margin-top: 0px;
     margin-bottom: 8px;
     background-color: aqua; 
-    
 }
 .h3-goals,
 .h3-name,
