@@ -170,6 +170,12 @@ body{
     background-color: #404BBF;
 }
 
+            /* What are we doing */
+.container-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
             /* EMPLOYEERS */
 .section-employees-content{
     background-color: #F4F4FD;
