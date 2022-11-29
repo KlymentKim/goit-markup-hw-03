@@ -201,16 +201,9 @@ body{
     margin-top: var(--card-set-gap);
 
 }
-.border-wrapper{
-    /* border: 1px solid #E7E9FC;
-    background: linear-gradient(0deg,
-     rgba(77, 90, 229, 0.1),
-     rgba(77, 90, 229, 0.1)); */
-}
 /* .container-card-wokr:not(:nth-child(3n)){
     margin-right: 24px;
 } */
-
 
             /* EMPLOYEERS */
 .employee-wrapper-content{
@@ -353,5 +346,4 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-right: 156px;
-    
 }
