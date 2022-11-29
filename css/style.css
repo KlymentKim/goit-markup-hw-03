@@ -177,6 +177,13 @@ body{
 
 .employees-list{
     display: flex;
+    flex-wrap: wrap;
+}
+.employee-card:not(:nth-child(n+5)){
+    margin-right: 24px;
+}
+.employee-card:not(:nth-last-child(n+4)){
+    margin-bottom: 32px;
 }
 .employee{
     background-color:var(--primary-color-baground);
