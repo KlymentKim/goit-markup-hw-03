@@ -175,6 +175,13 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+.container-card-wokr{
+    flex-basis: calc((100%-48px)/3);
+}
+/* .container-card-wokr:not(:nth-child(3n)){
+    margin-right: 24px;
+} */
+
 
             /* EMPLOYEERS */
 .section-employees-content{
@@ -187,13 +194,17 @@ body{
 .employees-list{
     display: flex;
     flex-wrap: wrap;
+    /* gap:24px; */
 }
-.employee-card:not(:nth-child(n+5)){
+.employee-card{
+    flex-basis: calc((100%-72px)/4);
+}
+/* .employee-card:not(:nth-child(4n+1)){
     margin-right: 24px;
 }
 .employee-card:not(:nth-last-child(-n4+2)){
     margin-bottom: 32px;
-}
+} */
 
                 /* Header menu */
 .nav-link,
