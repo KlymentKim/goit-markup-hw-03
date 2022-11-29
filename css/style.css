@@ -71,15 +71,17 @@ body{
     display: flex;
     align-items: center;     
 }
-.main-logo2{
+.main-logo1{
     margin-right: 77px;
 }
 .contact-link{
     margin-left: auto;
 }
-.nav-link:not(:last){
+.menu-item:not(:last-child){
     margin-right: 40px;
 }
+
+
 /* Fonts styles */
 .main-logo1,
 .footer-logo1{
@@ -116,8 +118,9 @@ body{
     
 }
 /* ul список */
-.header-nav-list{
+.header-menu{
     display: flex;
+    align-items: center;
 }
 /* ul список */
 .header-contact-list{
@@ -125,14 +128,14 @@ body{
 
 }
 /* 1-й вариант чистка отсупов */
-/* .header-nav-list .item:not(:last-child){
+/* .header-menu .item:not(:last-child){
     background-color: tomato;
     margin-right: 40px;
     outline: 1px solid black;
 } */
 
 /* 2-й вариант чистка отсупов nav ul li */
-/* .header-nav-list .item + .item { */
+/* .header-menu .item + .item { */
     /* background-color: tomato; */
     /* margin-left: 40px; */
     /* outline: 1px solid black; */
@@ -142,7 +145,7 @@ body{
     margin-left: 40px;
 } */
 /* задаем ссылки правий отступ */
-.header-nav-list .nav-link{
+.header-menu .nav-link{
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
