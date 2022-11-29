@@ -153,8 +153,6 @@ body{
     background-color: var(--primary-color-button);
     color: var(--primary-color-baground);
    
-    min-width: 170px;
-    min-height: 51px;
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 1px solid transparent;
@@ -163,7 +161,6 @@ body{
     gap: 10px;
     border-radius: 4px;
     cursor: pointer;
-
 }
 .btn:hover{
     background-color: #404BBF;
