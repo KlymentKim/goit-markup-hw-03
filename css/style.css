@@ -35,6 +35,8 @@ img{
     --primary-color-logo2:#F4F4FD;
     --footer-color-text:#E7E9FC;
     --color-btn-hover:#404BBF;
+
+    -- 
 }
 
 body{
@@ -179,13 +181,13 @@ body{
     flex-wrap: wrap;
 }
 .container-card-wokr{
-    flex-basis: calc((100% - 48px) /3);
+    flex-basis: calc((100% - 24px) /3);
 }
 .border-wrapper{
-    border: 1px solid #E7E9FC;
+    /* border: 1px solid #E7E9FC;
     background: linear-gradient(0deg,
      rgba(77, 90, 229, 0.1),
-     rgba(77, 90, 229, 0.1)), url(2368.jpg);
+     rgba(77, 90, 229, 0.1)); */
 }
 /* .container-card-wokr:not(:nth-child(3n)){
     margin-right: 24px;
@@ -201,26 +203,27 @@ body{
 .employees-list{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 0px 32px;
-    gap: 32px;
+ 
+    margin-left: -24px;
+    margin-top: -24px;
 
     background-color: #F4F4FD;
 }
-.employee-card{
-    
-    flex-basis: calc((100% - 72px) / 4);
-    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+.employees-list > .employee-card{
+    flex-basis: calc(100% / 4 - 24px);
+
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px; */
+    border-radius: 0px 0px 4px 4px;
+
+    margin-left: 24px;
+    margin-top: 24px;
     
 }
 .employee-wrapper{
     padding-top: 32px;
-    border: 1px solid tomato;
+    /* border: 1px solid tomato; */
 }
 .h3-name{
     margin-bottom: 8px;
