@@ -40,7 +40,9 @@ img{
     --color-btn-hover:#404BBF;
     
     --card-set-gap: 20px;
-    --botton-set-gar:24px;
+    --portfolio-img-set-gar:24px;
+    --padding-top-set-img:32px;
+    --margin-bottom-set-img:8px;
 }
 
 body{
@@ -232,11 +234,11 @@ body{
     
 }
 .employee-wrapper{
-    padding-top: 32px;
+    padding-top: var(--padding-top-set-img);
     /* border: 1px solid tomato; */
 }
 .h3-name{
-    margin-bottom: 8px;
+    margin-bottom: var(--margin-bottom-set-img);
 }
 /* .employee-card:not(:nth-child(4n+1)){
     margin-right: 24px;
@@ -289,8 +291,10 @@ body{
     
     margin-bottom: 72px;
 }
-.h3-goals{
-    margin-bottom: 8px;
+    /* отступи у блоку image */
+.h3-goals,
+.h2-type-app{
+    margin-bottom: var(--margin-bottom-set-img);
  
 }
 .h3-goals,
@@ -316,6 +320,7 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+    /* кнопки отступи кроме последнего */
 .btn-item:not(:last-child){
     margin-right: 24px;
 }
@@ -342,11 +347,35 @@ body{
 
 .portfolio-wrapper-img{
     display: flex;
+    padding-bottom: 120px;
+    /* flex-wrap: wrap; */
 }
 .portfolio-items-img{
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
+    
+    margin-top: calc(-1 * var(--portfolio-img-set-gar));
+    margin-left: calc(-1 * var(--portfolio-img-set-gar));
+   
+    
+
+    background-color: #F4F4FD;
 }
+.portfolio-items-img > .portfolio-img{
+       
+        flex-basis: calc(100% / 3 - var(--portfolio-img-set-gar));
+        margin-left: var(--portfolio-img-set-gar);
+        margin-top: var(--portfolio-img-set-gar);
+        margin-bottom: 48px;
+}
+
+.portfolio-description{
+    padding-top: var(--padding-top-set-img);
+}
+
+
+
 /* footer */
 .footer{
      background-color: #2E2F42;
