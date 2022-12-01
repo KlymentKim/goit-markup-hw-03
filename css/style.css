@@ -10,7 +10,7 @@ html{
     text-decoration: none;
     color:inherit;
 }
-ul,ol{
+ul,ol,li{
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
@@ -72,7 +72,7 @@ body{
     padding-bottom: 120px;
 }
 
-        /* HEADER CONTENT  */
+            /* HEADER CONTENT  */
 .header{
     padding: 24px 24px;
 }
@@ -84,16 +84,17 @@ body{
     display: flex;
     /* outline: 1px solid tomato; */
 }
-/* всі елементи nav горизонтально  */
+            /* всі елементи nav горизонтально  */
 .container-menu{
     display: flex;
     align-items: center;  
     justify-content: space-between;   
 }
-/* ul список */
+        /* ul список */
 .header-menu-list{
     display: flex;
 }
+        /* logo отступ */
 .main-logo1{
     margin-right: 77px;
 }
@@ -374,7 +375,7 @@ body{
     padding-top: var(--padding-top-set-img);
 }
 
-            /* footer */
+            /* Footer */
 .footer{
      max-width: 1440px;
      background-color: #2E2F42;
@@ -386,7 +387,7 @@ body{
 .footer-wrapper{
     justify-content: flex-start;
 }
-.footer-link{
+.footer-logo1{
     margin-bottom: 16px;
 }
 .main-footer-text,
