@@ -326,9 +326,12 @@ body{
 }
 
 .portfolio-btn-items{  
-    font-family: inherit;
     background-color: var(--primary-color-button);
     color: var(--primary-color-baground);
+
+    padding: 8px 16px;
+
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -348,7 +351,6 @@ body{
 .portfolio-wrapper-img{
     display: flex;
     padding-bottom: 120px;
-    /* flex-wrap: wrap; */
 }
 .portfolio-items-img{
     display: flex;
@@ -358,8 +360,6 @@ body{
     margin-top: calc(-1 * var(--portfolio-img-set-gar));
     margin-left: calc(-1 * var(--portfolio-img-set-gar));
    
-    
-
     background-color: #F4F4FD;
 }
 .portfolio-items-img > .portfolio-img{
@@ -374,14 +374,17 @@ body{
     padding-top: var(--padding-top-set-img);
 }
 
-
-
-/* footer */
+            /* footer */
 .footer{
+     max-width: 1440px;
      background-color: #2E2F42;
      padding-top: 100px;
      padding-bottom: 100px;
-    
+     margin: 0 auto;
+     
+}
+.footer-wrapper{
+    justify-content: flex-start;
 }
 .footer-link{
     margin-bottom: 16px;
