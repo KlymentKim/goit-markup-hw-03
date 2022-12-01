@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="HTML-розмітка макета сторінки домашнього завдання #1, без CSS оформлення.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
@@ -16,31 +15,37 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="portfolio-header">    
-        <nav class="portfolio-header-content">
-            <a href="./index.html" class="main-logo1">WEB<span class="main-logo2">STUDIO</span></a>
-            <ul class="portfolio-header-items">
-                <li><a href="./index.html" class="portfolio-nav-items">Studio</a></li>
-                <li><a href="./portfolio.html" class="portfolio-nav-items">Portfolio</a></li>
-                <li><a href="#" class="portfolio-nav-items">Contacts</a></li>
+    <header class="header">
+        <div class="container header-div">
+            <nav class="main-menu container-menu">
+                <a href="#" class="main-logo1 link">WEB<span class="main-logo2">STUDIO</span></a>
+                <ul class="header-menu-list">
+                    <li class="menu-item"><a href="./studio.html" class="nav-link link">Studio</a></li>
+                    <li class="menu-item"><a href="./portfolio.html" class="nav-link link">Portfolio</a></li>
+                    <li class="menu-item"><a href="./contacts.html" class="nav-link link">Contacts</a></li>
+                </ul>
+            </nav>
+            <ul class="header-menu-list menu-contact">
+                <li class="menu-item"><a href="mailto:info@devstudio.com" class="contact-link link">info@devstudio.com</a>
+                </li>
+                <li class=""><a href="tel:+110001111111" class="contact-link link">+11 (000) 111-11-11</a></li>
             </ul>
-        </nav>
-            <ul class="portfolio-header-contacts">
-                <li><a href="mailto:info@devstudio.com" class="header-contact">info@devstudio.com</a></li>
-                <li><a href="tel:+110001111111" class="header-contact">+11 (000) 111-11-11</a></li>
-            </ul>
+        </div>
     </header>
     <main>
          <!-- <div class="portfolio-header-line" href="line"></div> -->
-        <section class="portfolio-content"> 
-            <h1 class="visually-hidden">Portfolio</h1>  
-            <ul class="portfolio-content-items">
-                <li><button class="portfolio-btn-items" type="button">All</button></li>
-                <li><button class="portfolio-btn-items" type="button">Web Site</button></li>
-                <li><button class="portfolio-btn-items" type="button">App</button></li>
-                <li><button class="portfolio-btn-items" type="button">Desing</button></li>
-                <li><button class="portfolio-btn-items" type="button">Marketing</button></li>
-            </ul>
+        <section class="portfolio-content "> 
+            <div class="container portfolio-btn-wrapper">
+                <h1 class="visually-hidden">Portfolio</h1>
+                <ul class="portfolio-content-items">
+                    <li class="btn-item"><button class="portfolio-btn-items" type="button">All</button></li>
+                    <li class="btn-item"><button class="portfolio-btn-items" type="button">Web Site</button></li>
+                    <li class="btn-item"><button class="portfolio-btn-items" type="button">App</button></li>
+                    <li class="btn-item"><button class="portfolio-btn-items" type="button">Desing</button></li>
+                    <li class="btn-item"><button class="portfolio-btn-items" type="button">Marketing</button></li>
+                </ul>
+            </div>
+            
             <ul>
                 <li>
                     <img src="./images/bankingApp.jpg" alt="bankingApp" width="360" height="300">

@@ -4,7 +4,7 @@ html{
 *,
 *::before,
 *::after{
-    box-sizings: inherit;
+    box-sizing: inherit;
 }
 .link{
     text-decoration: none;
@@ -23,6 +23,9 @@ h1,h2,h3,h4,h5,p{
 }
 img{
     display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 :root{
     --primary-color-text:#2E2F42;
@@ -35,8 +38,9 @@ img{
     --primary-color-logo2:#F4F4FD;
     --footer-color-text:#E7E9FC;
     --color-btn-hover:#404BBF;
-
+    
     --card-set-gap: 20px;
+    --botton-set-gar:24px;
 }
 
 body{
@@ -178,7 +182,6 @@ body{
     /* margin-left: calc(-1 * var(--card-set-gap)); */
     /* margin-top: calc(-1 * var(--card-set-gap));  */
 }
-
 .wrapper-tittle{
     display: flex;
 }
@@ -186,7 +189,6 @@ body{
     flex-basis: calc(100% / 4 -var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
-
 }
             /* What are we doing */
 .container-list{
@@ -199,7 +201,6 @@ body{
     flex-basis: calc((100% / 3 - var(--card-set-gap)));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
-
 }
 /* .container-card-wokr:not(:nth-child(3n)){
     margin-right: 24px;
@@ -208,7 +209,6 @@ body{
             /* EMPLOYEERS */
 .employee-wrapper-content{
     background-color:var(--primary-color-baground);
-    
 }
 .employees-list{
     display: flex;
@@ -221,13 +221,12 @@ body{
     background-color: #F4F4FD;
 }
 .employees-list > .employee-card{
-    flex-basis: calc(100% / 4 - var(--card-set-gap));
-
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
     
@@ -304,13 +303,23 @@ body{
     letter-spacing: 0.02em;
 }
 /* portfolio css */
+.portfolio-btn-wrapper{
+    display: flex;
+    align-items: center;
+    padding-top: 96px;
+    padding-bottom: 72px;
+   
+}
 .portfolio-content-items{
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: flex-start;  
-  
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
 }
+.btn-item:not(:last-child){
+    margin-right: 24px;
+}
+
 .portfolio-btn-items{  
     font-family: inherit;
     background-color: var(--primary-color-button);
@@ -319,12 +328,16 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin: 0 24px 0 24px;
     border-radius: 4px;
     cursor: pointer;
 }
 .portfolio-btn-items:hover{
     background-color:var(--color-btn-hover);
+    box-shadow: 0px 3px 1px
+     rgba(0, 0, 0, 0.1), 0px 2px 1px
+     rgba(0, 0, 0, 0.08), 0px 2px 2px
+     rgba(0, 0, 0, 0.12);
+     border-radius: 4px;
 }
 
 /* footer */
