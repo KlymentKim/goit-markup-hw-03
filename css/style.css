@@ -23,9 +23,9 @@ h1,h2,h3,h4,h5,p{
 }
 img{
     display: block;
-    margin: 0;
-    padding: 0;
-    border: 0;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* border: 0; */
 }
 :root{
     --primary-color-text:#2E2F42;
@@ -51,16 +51,20 @@ body{
     
 }
 .visually-hidden {
-    position: absolute;
+    /* position: absolute;
     width: 1px;
     height: 1px;
-    margin: -1px;
+    margin: 0;
     border: 0;
     padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;
+    overflow: hidden; */
+
+        visibility: hidden;
+        pointer-events: none;
+        position: absolute;
 }
 .container{
     width: 1158px;
@@ -179,12 +183,13 @@ body{
 .btn:hover{
     background-color: #404BBF;
 }
+       
             /* Description-title */
 .description-title{
     display: flex;
     flex-wrap: wrap;
-    /* margin-left: calc(-1 * var(--card-set-gap)); */
-    /* margin-top: calc(-1 * var(--card-set-gap));  */
+    /* margin-left: calc(-1 * var(--card-set-gap));  */
+    margin-top: calc(-1 * var(--card-set-gap));  
 }
 .wrapper-tittle{
     display: flex;
@@ -201,7 +206,7 @@ body{
     margin-left: calc(-1 * var(--card-set-gap));
     margin-top: calc(-1 * var(--card-set-gap));
 }
-.container-card-wokr{
+.container-list > .container-card-wokr{
     flex-basis: calc((100% / 3 - var(--card-set-gap)));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
