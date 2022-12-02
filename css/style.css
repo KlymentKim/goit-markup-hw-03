@@ -188,16 +188,18 @@ body{
 .description-title{
     display: flex;
     flex-wrap: wrap;
-    /* margin-left: calc(-1 * var(--card-set-gap));  */
-    margin-top: calc(-1 * var(--card-set-gap));  
+    /* margin-left: calc(-1 * var(--card-set-gap)); 
+    margin-top: calc(-1 * var(--card-set-gap));   */
 }
 .wrapper-tittle{
     display: flex;
+    align-items: flex-start;
 }
-.wrapper-item{
-    flex-basis: calc(100% / 4 -var(--card-set-gap));
+.wrapper-list > .wrapper-item:not(:nth-last-child(3n)) {
+    margin-right:  24px;
+    /* flex-basis: calc(100% / 4 -var(--card-set-gap));
     margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
+    margin-top: var(--card-set-gap); */
 }
             /* What are we doing */
 .container-list{
@@ -246,6 +248,7 @@ body{
 }
 .employee-wrapper{
     padding-top: var(--padding-top-set-img);
+    padding: 32px 16px;
     /* border: 1px solid tomato; */
 }
 .h3-name{
