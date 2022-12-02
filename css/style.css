@@ -145,7 +145,8 @@ body{
     text-transform: uppercase;
 }
 
-          /* MAIN SECTION  */
+                  /* MAIN SECTION  */
+    /* < !-- Header Tittle --> */
 
 .title-content{
     background-color: var(--primary-color-title);
