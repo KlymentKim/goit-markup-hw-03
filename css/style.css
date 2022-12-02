@@ -48,6 +48,7 @@ img{
 body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--primary-color-baground);
+    
 }
 .visually-hidden {
     position: absolute;
@@ -64,8 +65,8 @@ body{
 .container{
     width: 1158px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .section{
     padding-top: 120px;
@@ -210,8 +211,12 @@ body{
 } */
 
             /* EMPLOYEERS */
+
+.section-employees-content > .section{
+    background-color: #F4F4FD;
+}
 .employee-wrapper-content{
-    background-color:var(--primary-color-baground);
+    background-color: #F4F4FD;
 }
 .employees-list{
     display: flex;
