@@ -198,6 +198,9 @@ body{
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap); 
 }
+.wrapper-item:nth-last-child(n+1){
+    margin-top: 0;
+}
 
             /* What are we doing   < !-- Section-2 -->*/
 .container-list{
