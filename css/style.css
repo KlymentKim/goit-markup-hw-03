@@ -42,9 +42,9 @@ img{
     --color-btn-hover:#404BBF;
     
     --card-set-gap: 24px;
-    --portfolio-img-set-gar:24px;
-    --padding-top-set-img:32px;
-    --margin-bottom-set-img:8px;
+    --portfolio-img-set-gar: 24px;
+    --padding-top-set-img: 32px;
+    --margin-bottom-set-img: 8px;
 }
 
 body{
@@ -186,23 +186,23 @@ body{
     background-color: #404BBF;
 }
        
-            /* Description-title */
+            /* Description-title Section-1 */
 
 .wrapper-tittle{
     display: flex;
-     flex-wrap: wrap;
+    flex-wrap: wrap;
+
     margin-left: calc(-1 * var(--card-set-gap));
     margin-top: calc(-1 * var(--card-set-gap));
 }
 .wrapper-tittle > .wrapper-item{
-   
     flex-basis: calc(100% / 4 - var(--card-set-gap));
+
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap); 
 }
 
-
-            /* What are we doing */
+            /* What are we doing   < !-- Section-2 -->*/
 .container-list{
     display: flex;
     flex-wrap: wrap;
@@ -211,14 +211,12 @@ body{
 }
 .container-list > .container-card-wokr{
     flex-basis: calc((100% / 3 - var(--card-set-gap)));
+
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
 }
-/* .container-card-wokr:not(:nth-child(3n)){
-    margin-right: 24px;
-} */
 
-            /* EMPLOYEERS */
+            /* EMPLOYEERS   < !-- Section-3 -->*/
 
 .section-employees-content > .section{
     background-color: #F4F4FD;
