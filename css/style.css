@@ -23,8 +23,10 @@ h1,h2,h3,h4,h5,p{
 }
 img{
     display: block;
-    margin: 0;
-    padding: 0;
+    max-width: 100%;
+    height: auto;
+    /* margin: 0;
+    padding: 0; */
     /* border: 0; */
 }
 :root{
@@ -185,22 +187,21 @@ body{
 }
        
             /* Description-title */
-.description-title{
-    display: flex;
-    flex-wrap: wrap;
-    /* margin-left: calc(-1 * var(--card-set-gap)); 
-    margin-top: calc(-1 * var(--card-set-gap));   */
-}
+
 .wrapper-tittle{
     display: flex;
-    align-items: flex-start;
+     flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
 }
-.wrapper-list > .wrapper-item:not(:nth-last-child(3n)) {
-    margin-right:  24px;
-    /* flex-basis: calc(100% / 4 -var(--card-set-gap));
+.wrapper-tittle > .wrapper-item{
+   
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap); */
+    margin-top: var(--card-set-gap); 
 }
+
+
             /* What are we doing */
 .container-list{
     display: flex;
@@ -230,7 +231,7 @@ body{
     flex-wrap: wrap;
     text-align: center;
  
-    margin-left: calc(-1 *var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
     margin-top: calc(-1 * var(--card-set-gap));
 
     background-color: #F4F4FD;
@@ -343,7 +344,7 @@ body{
     background-color: var(--primary-color-button);
     color: var(--primary-color-baground);
 
-    padding: 8px 16px;
+    padding: 12px 24px;
 
     font-family: inherit;
     font-weight: 500;
@@ -360,6 +361,10 @@ body{
      rgba(0, 0, 0, 0.08), 0px 2px 2px
      rgba(0, 0, 0, 0.12);
      border-radius: 4px;
+}
+
+.bnt-padding-text{
+    padding: 4px 8px;
 }
         /* Блок карти портфольо */
 .portfolio-wrapper-img{
