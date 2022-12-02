@@ -369,6 +369,8 @@ body{
     
     margin-top: calc(-1 * var(--portfolio-img-set-gar));
     margin-left: calc(-1 * var(--portfolio-img-set-gar));
+
+    
      
 }
 .portfolio-items-img > .portfolio-img{
@@ -378,7 +380,12 @@ body{
         margin-top: var(--portfolio-img-set-gar);
         margin-bottom: 24px;
 
-        background-color: #F4F4FD;
+        background: var(--primary-color-baground);
+
+        border: 0.5px solid #F4F4FD;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px
+        rgba(46, 47, 66, 0.08);
 }
 /* очитска верхніх margin відступи в карточках */
 .portfolio-img:nth-last-child(n+7){
@@ -389,15 +396,10 @@ body{
     margin-bottom: 0;
 }
 
-.card{
-        border: 0.5px solid #F4F4FD;
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px
-         rgba(46, 47, 66, 0.08);
-}
 .portfolio-description{
     padding-top: var(--padding-top-set-img);
     padding: 32px 0 32px 16px;
+    
 }
 
             /* Footer */
