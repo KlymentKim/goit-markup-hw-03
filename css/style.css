@@ -217,7 +217,7 @@ body{
 }
 
             /* EMPLOYEERS   < !-- Section-3 -->*/
-.section-employees-content > .section{
+.section-employees-content{
     background-color: #F4F4FD;
 }
 .employee-wrapper-content{
