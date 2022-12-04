@@ -220,9 +220,7 @@ body{
 .container-list{
     display: flex;
     flex-wrap: wrap;
-   
 }
-
 .container-card-wokr:not(:nth-child(3n)){
     margin-right: 24px;
 }
