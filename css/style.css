@@ -223,6 +223,10 @@ body{
    
 }
 
+.container-card-wokr:not(:nth-child(3n)){
+    margin-right: 24px;
+}
+
             /* EMPLOYEERS   < !-- Section-3 -->*/
 .section-employees-content{
     background-color: #F4F4FD;
