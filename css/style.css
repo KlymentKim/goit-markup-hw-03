@@ -220,17 +220,17 @@ body{
 .container-list{
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--card-set-gap));
-    margin-top: calc(-1 * var(--card-set-gap));
+    /* margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap)); */
 }
 .container-list > .container-card-wokr{
-    flex-basis: calc((100% / 3 - var(--card-set-gap)));
+    /* flex-basis: calc((100% / 3 - var(--card-set-gap)));
 
     margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
+    margin-top: var(--card-set-gap); */
 }
 /* очитска вверхні відступи в карточках */
-.container-card-wokr:nth-last-child(n+1){
+/* .container-card-wokr:nth-last-child(n+1){
     margin-top: 0;
 }
 .container-card-wokr:first-child{
@@ -238,8 +238,10 @@ body{
 }
 .container-card-wokr:last-child{
     margin-right: 0;
+} */
+.container-card-wokr:not(:nth-child(3n)){
+    margin-right: 24px;
 }
-
             /* EMPLOYEERS   < !-- Section-3 -->*/
 .section-employees-content{
     background-color: #F4F4FD;
