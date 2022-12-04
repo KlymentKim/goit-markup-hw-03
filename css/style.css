@@ -68,7 +68,7 @@ body{
         position: absolute;
 }
 .container{
-    width: 1158px;
+    width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -220,28 +220,9 @@ body{
 .container-list{
     display: flex;
     flex-wrap: wrap;
-    /* margin-left: calc(-1 * var(--card-set-gap));
-    margin-top: calc(-1 * var(--card-set-gap)); */
+   
 }
-.container-list > .container-card-wokr{
-    /* flex-basis: calc((100% / 3 - var(--card-set-gap)));
 
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap); */
-}
-/* очитска вверхні відступи в карточках */
-/* .container-card-wokr:nth-last-child(n+1){
-    margin-top: 0;
-}
-.container-card-wokr:first-child{
-    margin-left: 0;
-}
-.container-card-wokr:last-child{
-    margin-right: 0;
-} */
-.container-card-wokr:not(:nth-child(3n)){
-    margin-right: 24px;
-}
             /* EMPLOYEERS   < !-- Section-3 -->*/
 .section-employees-content{
     background-color: #F4F4FD;
@@ -396,35 +377,38 @@ body{
 }
         /* Блок карти портфольо */
 .portfolio-wrapper-img{
-    /* display: flex; */
+    display: flex;
+    /* flex-wrap: wrap; */
     padding-bottom: 120px;
 }
 .portfolio-items-img{
     display: flex;
     flex-wrap: wrap;
-
-    padding: 0;
-    margin: 0;
     
-    margin-top: calc(-1 * var(--portfolio-img-set-gar));
-    margin-left: calc(-1 * var(--portfolio-img-set-gar));
-
     
-     
+    /* margin-top: calc(-1 * var(--portfolio-img-set-gar)); */
+    /* margin-left: calc(-1 * var(--portfolio-img-set-gar)); */
+
 }
 .portfolio-items-img > .portfolio-img{
-        flex-basis: calc(100% / 3 - var(--portfolio-img-set-gar));
+        /* flex-basis: calc(100% / 3 - var(--portfolio-img-set-gar));
         
         margin-left: var(--portfolio-img-set-gar);
         margin-top: var(--portfolio-img-set-gar);
-        margin-bottom: 24px;
+        margin-bottom: 24px; */
 
         background: var(--primary-color-baground);
-
+       
         border: 0.5px solid #F4F4FD;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px
         rgba(46, 47, 66, 0.08);
+}
+.portfolio-img:not(:nth-child(3n)){
+    margin-right: 24px;
+}
+.portfolio-img:not(:nth-last-child(-n+3)){
+    margin-bottom: 48px;
 }
 /* очитска верхніх margin відступи в карточках */
 .portfolio-img:nth-last-child(n+7){
