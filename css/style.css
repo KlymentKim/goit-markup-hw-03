@@ -251,7 +251,7 @@ body{
     /* flex-basis: calc(100% / 4 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap); */
-    
+
 }
 .employee-card:nth-child(-n+4){
     margin-right: 24px;
