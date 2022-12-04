@@ -432,7 +432,10 @@ body{
 .portfolio-img:nth-last-child(-n+3){
     margin-bottom: 0;
 }
-
+.wrapper-img::nth-child(5n+1),
+.wrapper-img::nth-child(3){
+    margin-left:0;
+}
 .portfolio-description{
     padding-top: var(--padding-top-set-img);
     padding: 32px 0 32px 16px;
