@@ -185,7 +185,6 @@ body{
     border: 1px solid transparent;
 
     padding: 16px 32px;
-    /* gap: 10px; */
     border-radius: 4px;
     cursor: pointer;
 }
@@ -235,7 +234,7 @@ body{
 }
 .employees-list{
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     text-align: center;
  
     /* margin-left: calc(-1 * var(--card-set-gap));
@@ -249,13 +248,12 @@ body{
     0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 
-
     /* flex-basis: calc(100% / 4 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap); */
     
 }
-.employee-card:nth-child(n+1){
+.employee-card:nth-child(-n+4){
     margin-right: 24px;
 }
 .employee-wrapper{
@@ -265,19 +263,6 @@ body{
 .h3-name{
     margin-bottom: var(--margin-bottom-set-img);
 }
- /* .employee-card:nth-child(n){
-    margin-top: 0;
-}
-.employee-card:first-child{
-    margin-left: 0;
-}  */
-/* .employee-card:not(:nth-child(4n+1)){
-    margin-right: 24px;
-}
-.employee-card:not(:nth-last-child(-n4+2)){
-    margin-bottom: 32px;
-} */
-
                 /* Header menu */
 .nav-link,
 .portfolio-nav-items{
@@ -383,22 +368,13 @@ body{
     /* flex-wrap: wrap; */
     padding-bottom: 120px;
 }
+    /* ul */
 .portfolio-items-img{
     display: flex;
     flex-wrap: wrap;
-    
-    
-    /* margin-top: calc(-1 * var(--portfolio-img-set-gar)); */
-    /* margin-left: calc(-1 * var(--portfolio-img-set-gar)); */
-
 }
+    /* li */
 .portfolio-items-img > .portfolio-img{
-        /* flex-basis: calc(100% / 3 - var(--portfolio-img-set-gar));
-        
-        margin-left: var(--portfolio-img-set-gar);
-        margin-top: var(--portfolio-img-set-gar);
-        margin-bottom: 24px; */
-
         background: var(--primary-color-baground);
        
         border: 0.5px solid #F4F4FD;
@@ -412,24 +388,11 @@ body{
 .portfolio-img:not(:nth-last-child(-n+3)){
     margin-bottom: 48px;
 }
-/* очитска верхніх margin відступи в карточках */
-.portfolio-img:nth-last-child(n+7){
-    margin-top: 0;
-}
-   /* очитска нижніх margin відступи в карточках */
-.portfolio-img:nth-last-child(-n+3){
-    margin-bottom: 0;
-}
-.wrapper-img::nth-child(5n+1),
-.wrapper-img::nth-child(3){
-    margin-left:0;
-}
 .portfolio-description{
     padding-top: var(--padding-top-set-img);
     padding: 32px 0 32px 16px;
     
 }
-
             /* Footer */
 .footer{
      max-width: 1440px;
